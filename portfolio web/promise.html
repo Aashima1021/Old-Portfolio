@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Promise testing</title>
+</head>
+<body>
+	<p onclick="callPromise()">click me</p>
+</body>
+<script type="text/javascript">
+	let promise = new Promise((resolve)=>{
+		resolve('Hello world')
+	})
+	const callPromise = ()=>{
+		promise().then((response)=>{
+		console.log(response)
+	})
+	}
+</script>
+</html>
